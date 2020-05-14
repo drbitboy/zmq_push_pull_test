@@ -5,7 +5,7 @@
     % ./client_push                              <== Client pushing ~10kmessages
     % D: 20-05-14 18:54:23 Received = 10240      <== Response from server; none lost
 
-    % ./client_push  1024000                     <== Client pusing 1Mmessages
+    % ./client_push  1024000                     <== Client pushing 1Mmessages
     % D: 20-05-14 18:54:37 Received = 1024000    <== Response from server; none lost
 
     % kill -USR1 19000                           <== Interrupt server via signal
