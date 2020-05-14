@@ -38,3 +38,8 @@
     //
     // N.B. paired with client pushing N messsages as fast as possible
     ////////////////////////////////////////////////////////////////////////
+
+### Prerequisites (ubuntu; typical; ca. 2020-May)
+
+* libzmq3-dev
+* libczmq-dev
