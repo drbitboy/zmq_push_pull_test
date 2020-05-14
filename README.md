@@ -1,3 +1,18 @@
+## Usage (BASH, typical):
+
+    % ./server_pull &                            <== Start ZMQ_PULL server
+    [1] 19000                                    <== Server PID
+    % ./client_push                              <== Client pushing ~10kmessages
+    % D: 20-05-14 18:54:23 Received = 10240      <== Response from server; none lost
+
+    % ./client_push  1024000                     <== Client pusing 1Mmessages
+    % D: 20-05-14 18:54:37 Received = 1024000    <== Response from server; none lost
+
+    % kill -USR1 19000                           <== Interrupt server via signal
+    % 
+    [1]+  Done ./server_pull                     <== Server exit message
+
+
 ### client_push.c 
     ////////////////////////////////////////////////////////////////////////
     // Minimal client using ZMQ_PUSH socket
